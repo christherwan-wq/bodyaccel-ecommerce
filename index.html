@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BodyAccel - Dentifrice premium pour un sourire éclatant. Fraîcheur, Protection, Confiance.">
+    <meta name="theme-color" content="#1a3a5c">
+    <title>BodyAccel - Dentifrice Premium | Votre sourire mérite le meilleur</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Promotional Banner -->
+    <div class="promo-banner">
+        <div class="promo-content">
+            <div class="promo-item">
+                <span class="promo-icon">🔥</span>
+                <span class="promo-text"><strong>PROMO :</strong> 1 = 5 000 FCFA</span>
+            </div>
+            <div class="promo-item">
+                <span class="promo-icon">🔥</span>
+                <span class="promo-text"><strong>PROMO DUO :</strong> 2 = 8 000 FCFA</span>
+            </div>
+            <div class="promo-item">
+                <span class="promo-icon">🚚</span>
+                <span class="promo-text"><strong>LIVRAISON GRATUITE</strong> À ABIDJAN</span>
+            </div>
+            <div class="promo-item">
+                <span class="promo-text"><strong>DÉCOUVRIR</strong> <span class="arrow">→</span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h1>BodyAccel</h1>
+                <p class="tagline">Premium Care</p>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Accueil</a></li>
+                <li><a href="#products" class="nav-link">Boutique</a></li>
+                <li><a href="#about" class="nav-link">À propos</a></li>
+                <li><a href="#testimonials" class="nav-link">Avis clients</a></li>
+                <li><a href="#faq" class="nav-link">FAQ</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><a href="#cart" class="nav-link cart-link">🛒 Panier <span class="cart-count" id="cartCount">0</span></a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="hero-title">Votre sourire mérite le meilleur.</h2>
+                <p class="hero-subtitle">Fraîcheur • Protection • Confiance</p>
+                <div class="hero-description">
+                    Découvrez BodyAccel, le dentifrice premium conçu pour offrir une fraîcheur incomparable et une protection complète à vos dents.
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                        DÉCOUVRIR LA BOUTIQUE →
+                    </button>
+                    <button class="btn btn-secondary" onclick="document.getElementById('products').scrollIntoView({behavior: 'smooth'})">
+                        PROFITER DE LA PROMO →
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="product-showcase">
+                    <img src="assets/product-hero.png" alt="BodyAccel Dentifrice Premium" class="hero-product">
+                </div>
+            </div>
+        </div>
+        <div class="hero-wave"></div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products" id="products">
+        <div class="section-header">
+            <h2>Nos Produits</h2>
+            <p>Qualité premium, résultats garantis</p>
+        </div>
+
+        <div class="products-container">
+            <!-- Product Card -->
+            <div class="product-card">
+                <div class="product-image-wrapper">
+                    <img src="assets/bodyaccel-tube.png" alt="BodyAccel Dentifrice" class="product-image">
+                    <span class="product-badge">MEILLEUR VENTE</span>
+                </div>
+                <div class="product-info">
+                    <h3>BodyAccel Premium</h3>
+                    <p class="product-description">Dentifrice blanc éclatant avec protection complète et fraîcheur durable.</p>
+                    
+                    <div class="product-features">
+                        <div class="feature">
+                            <span class="feature-icon">✨</span>
+                            <span>Blanchissant naturel</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🦷</span>
+                            <span>Protection 24h</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">❄️</span>
+                            <span>Fraîcheur intense</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🛡️</span>
+                            <span>Anti-caries</span>
+                        </div>
+                    </div>
+
+                    <div class="pricing-section">
+                        <div class="price-option">
+                            <label class="price-label">
+                                <input type="radio" name="product-option" value="single" checked>
+                                <span class="option-text">
+                                    <strong>1 Tube</strong>
+                                    <span class="price">5 000 FCFA</span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="price-option">
+                            <label class="price-label promo-option">
+                                <input type="radio" name="product-option" value="duo" checked>
+                                <span class="option-text">
+                                    <strong>2 Tubes (PROMO)</strong>
+                                    <span class="price">8 000 FCFA <span class="save">-36%</span></span>
+                                </span>
+                            </label>
+                        </div>
+                        <div class="price-option">
+                            <label class="price-label">
+                                <input type="radio" name="product-option" value="trio">
+                                <span class="option-text">
+                                    <strong>3 Tubes (MEGA PROMO)</strong>
+                                    <span class="price">11 000 FCFA <span class="save">-27%</span></span>
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-add-cart" onclick="addToCart('BodyAccel Premium', 5000)">
+                        AJOUTER AU PANIER →
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits">
+        <div class="section-header">
+            <h2>Pourquoi Choisir BodyAccel</h2>
+            <p>Excellence et confiance en chaque sourire</p>
+        </div>
+
+        <div class="benefits-grid">
+            <div class="benefit-card">
+                <div class="benefit-icon">✨</div>
+                <h3>Fraîcheur Quotidienne</h3>
+                <p>Une fraîcheur intense qui dure toute la journée. Formule spécialement conçue pour une sensation de fraîcheur incomparable.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🦷</div>
+                <h3>Soin Dentaire Complet</h3>
+                <p>Protection complète contre les caries, le tartre et la plaque dentaire. Formule cliniquement testée et approuvée.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🛡️</div>
+                <h3>Protection Renforcée</h3>
+                <p>Renforce l'émail dentaire et protège vos gencives. Ingrédients naturels et sans danger pour votre santé.</p>
+            </div>
+            <div class="benefit-card">
+                <div class="benefit-icon">🚚</div>
+                <h3>Livraison Gratuite</h3>
+                <p>Livraison gratuite et rapide à Abidjan. Commandez aujourd'hui, recevez demain ou le jour suivant.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="about-visual">
+                    <div class="circle circle-1"></div>
+                    <div class="circle circle-2"></div>
+                    <img src="assets/about-image.png" alt="À propos de BodyAccel">
+                </div>
+            </div>
+            <div class="about-content">
+                <h2>À Propos de BodyAccel</h2>
+                <p>BodyAccel est une marque premium de soins bucco-dentaires fondée sur la passion pour l'excellence et la santé. Nous croyons que chaque sourire mérite le meilleur.</p>
+                
+                <div class="about-points">
+                    <div class="about-point">
+                        <h4>🎯 Notre Mission</h4>
+                        <p>Offrir des produits de soins dentaires d'une qualité exceptionnelle, accessibles à tous, pour transformer les sourires et renforcer la confiance.</p>
+                    </div>
+                    <div class="about-point">
+                        <h4>💎 Nos Valeurs</h4>
+                        <p>Qualité premium, innovation constante, responsabilité environnementale et satisfaction client absolue.</p>
+                    </div>
+                    <div class="about-point">
+                        <h4>🌟 Notre Engagement</h4>
+                        <p>Tous nos produits sont testés dermatologiquement, sans ingrédients nocifs, et respectueux de l'environnement.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials" id="testimonials">
+        <div class="section-header">
+            <h2>Ce Que Disent Nos Clients</h2>
+            <p>Des milliers de sourires satisfaits</p>
+        </div>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <span class="verified">✓ Achat Vérifié</span>
+                </div>
+                <h4>Sourire Éclatant en 2 Semaines</h4>
+                <p>"J'ai commencé à utiliser BodyAccel il y a un mois et je suis vraiment impressionné. Mes dents sont plus blanches et plus lisses. La fraîcheur est incroyable. Je recommande vivement!"</p>
+                <div class="testimonial-author">
+                    <strong>Amara K.</strong>
+                    <span>Abidjan</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <span class="verified">✓ Achat Vérifié</span>
+                </div>
+                <h4>La Meilleure Décision</h4>
+                <p>"BodyAccel a changé ma routine dentaire. C'est un investissement pour ma santé. Le service client est excellent et la livraison était très rapide. Merci!"</p>
+                <div class="testimonial-author">
+                    <strong>Kofi M.</strong>
+                    <span>Abidjan</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <span class="verified">✓ Achat Vérifié</span>
+                </div>
+                <h4>Sensation de Fraîcheur Unique</h4>
+                <p>"J'adore BodyAccel! La sensation de fraîcheur dure toute la journée et c'est vraiment efficace. Les prix sont justes pour la qualité. Je suis une cliente régulière maintenant."</p>
+                <div class="testimonial-author">
+                    <strong>Yara L.</strong>
+                    <span>Abidjan</span>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <div class="testimonial-header">
+                    <div class="rating">⭐⭐⭐⭐⭐</div>
+                    <span class="verified">✓ Achat Vérifié</span>
+                </div>
+                <h4>Professionnel et Fiable</h4>
+                <p>"C'est un produit professionnel et fiable. J'ai recommandé à toute ma famille. Le packaging est élégant et le produit en lui-même est excellent. Continuez comme ça!"</p>
+                <div class="testimonial-author">
+                    <strong>Admir T.</strong>
+                    <span>Abidjan</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="testimonials-stats">
+            <div class="stat">
+                <h3>5,000+</h3>
+                <p>Clients Satisfaits</p>
+            </div>
+            <div class="stat">
+                <h3>4.9/5</h3>
+                <p>Note Moyenne</p>
+            </div>
+            <div class="stat">
+                <h3>98%</h3>
+                <p>Taux de Satisfaction</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq">
+        <div class="section-header">
+            <h2>Questions Fréquemment Posées</h2>
+            <p>Trouvez les réponses à vos questions</p>
+        </div>
+
+        <div class="faq-container">
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Combien de temps faut-il pour voir les résultats?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>La plupart de nos clients remarquent une amélioration après 1-2 semaines d'utilisation régulière. Pour des résultats optimaux, continuez à utiliser BodyAccel pendant 4 semaines.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>BodyAccel est-il sûr pour les dents sensibles?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Oui! BodyAccel est formulé pour être doux sur les dents sensibles. Cependant, si vous avez des dents très sensibles, nous recommandons de consulter un dentiste avant utilisation.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Quel est le délai de livraison à Abidjan?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>La livraison est gratuite et rapide à Abidjan. Généralement, vous recevrez votre commande dans 24-48 heures après la confirmation du paiement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Y a-t-il une garantie de satisfaction?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Oui! Si vous n'êtes pas complètement satisfait, nous vous remboursons intégralement dans les 30 jours suivant votre achat. Pas de questions posées!</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Le produit contient-il de fluorure?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Oui, BodyAccel contient du fluorure pour une protection optimale contre les caries. Tous nos ingrédients sont sûrs et approuvés dermatologiquement.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <button class="faq-question" onclick="toggleFaq(this)">
+                    <span>Puis-je acheter en gros pour mon entreprise?</span>
+                    <span class="faq-icon">+</span>
+                </button>
+                <div class="faq-answer">
+                    <p>Absolument! Nous offrons des tarifs de gros pour les achats en grande quantité. Contactez notre équipe B2B à contact@bodyaccel.ci</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="section-header">
+            <h2>Nous Contacter</h2>
+            <p>Votre satisfaction est notre priorité</p>
+        </div>
+
+        <div class="contact-container">
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h4>Téléphone</h4>
+                    <p>+225 07 XX XX XX XX</p>
+                    <p class="contact-hours">Lun-Ven: 8h-18h</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <h4>Email</h4>
+                    <p>support@bodyaccel.ci</p>
+                    <p class="contact-hours">Réponse dans 2 heures</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h4>Localisation</h4>
+                    <p>Abidjan, Côte d'Ivoire</p>
+                    <p class="contact-hours">Zone de livraison gratuite</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">💬</div>
+                    <h4>Réseaux Sociaux</h4>
+                    <p>Instagram • Facebook • WhatsApp</p>
+                    <p class="contact-hours">Support 24/7</p>
+                </div>
+            </div>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" placeholder="Votre nom" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" placeholder="Votre email" required>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Sujet de votre message" required>
+                </div>
+                <div class="form-group">
+                    <textarea placeholder="Votre message..." rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">ENVOYER →</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>BodyAccel</h4>
+                <p>Dentifrice premium pour un sourire éclatant. Fraîcheur, Protection, Confiance.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Liens Utiles</h4>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#products">Boutique</a></li>
+                    <li><a href="#testimonials">Avis Clients</a></li>
+                    <li><a href="#faq">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">Conditions d'Utilisation</a></li>
+                    <li><a href="#">Politique de Confidentialité</a></li>
+                    <li><a href="#">Politique de Retour</a></li>
+                    <li><a href="#">Livraison</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Nous Suivre</h4>
+                <div class="social-links">
+                    <a href="#" class="social-icon">f</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">𝕏</a>
+                    <a href="#" class="social-icon">💬</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 BodyAccel. Tous droits réservés. | Conçu avec 💙 pour votre sourire.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Modal -->
+    <div class="cart-modal" id="cartModal">
+        <div class="cart-content">
+            <button class="cart-close" onclick="closeCart()">✕</button>
+            <h2>🛒 Votre Panier</h2>
+            <div class="cart-items" id="cartItems">
+                <p class="empty-cart">Votre panier est vide. Commencez à faire vos achats!</p>
+            </div>
+            <div class="cart-summary" id="cartSummary" style="display: none;">
+                <div class="summary-row">
+                    <span>Sous-total</span>
+                    <span id="subtotal">0 FCFA</span>
+                </div>
+                <div class="summary-row">
+                    <span>Livraison</span>
+                    <span class="free">GRATUIT</span>
+                </div>
+                <div class="summary-row total">
+                    <span>Total</span>
+                    <span id="total">0 FCFA</span>
+                </div>
+                <button class="btn btn-primary" onclick="checkout()">PROCÉDER AU PAIEMENT →</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
